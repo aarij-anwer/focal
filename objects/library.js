@@ -137,6 +137,6 @@ const printSearchResults = function(query) {
 //printPlaylist("p01");
 //addTrackToPlaylist("t02","p02");
 //console.log(library);
-addTrack("Phir Milenge", "Faisal K and Young Stunners", "Coke Studio");
-addPlaylist("Workout");
-console.log(library);
+//addTrack("Phir Milenge", "Faisal K and Young Stunners", "Coke Studio");
+//addPlaylist("Workout");
+//console.log(library);
