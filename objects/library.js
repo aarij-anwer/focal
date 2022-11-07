@@ -99,13 +99,27 @@ const generateUid = function() {
 
 // adds a track to the library
 const addTrack = function(name, artist, album) {
-
+  let trackID = generateUid();
+  let trackObject = {
+    id: trackID,
+    name: name,
+    artist: artist,
+    album: album
+  };
+  //console.log(trackObject);
+  library.tracks[trackID] = trackObject;
 };
 
 
 // adds a playlist to the library
 const addPlaylist = function(name) {
-
+  let playlistID = generateUid();
+  let playListObject = {
+    id: playlistID,
+    name: name,
+    tracks: []
+  };
+  library.playlists[playlistID] = playListObject;
 };
 
 
@@ -121,4 +135,8 @@ const printSearchResults = function(query) {
 //printPlaylists();
 //printTracks();
 //printPlaylist("p01");
-addTrackToPlaylist("t02","p02");
+//addTrackToPlaylist("t02","p02");
+//console.log(library);
+addTrack("Phir Milenge", "Faisal K and Young Stunners", "Coke Studio");
+addPlaylist("Workout");
+console.log(library);
